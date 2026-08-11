@@ -15,7 +15,7 @@ app = Flask(__name__)
 # Fetch environment variables for OAuth2 and Bot
 DISCORD_CLIENT_ID = os.environ.get("DISCORD_CLIENT_ID")
 DISCORD_CLIENT_SECRET = os.environ.get("DISCORD_CLIENT_SECRET")
-RENDER_URL = os.environ.get("RENDER_EXTERNAL_URL", "https://your-app-name.onrender.com")
+RENDER_URL = os.environ.get("RENDER_EXTERNAL_URL", "https://doublecheck-pkoq.onrender.com")
 REDIRECT_URI = f"{RENDER_URL}/auth/callback"
 
 # Main Admin Dashboard (templates/index.html)
