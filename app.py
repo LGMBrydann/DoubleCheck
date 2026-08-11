@@ -13,6 +13,11 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/verify')
+def verify_page():
+    # Renders your verification HTML page
+    return render_template('index.html')
+
 @app.route('/api/stats')
 def stats():
     if bot.is_ready():
