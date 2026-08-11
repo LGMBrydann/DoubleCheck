@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoubleCheck | Verify Account</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="dashboard-container" style="max-width: 500px; text-align: center;">
+    <header class="header">
+      <div class="brand">
+        <div class="status-indicator online"></div>
+        <h1>DoubleCheck</h1>
+      </div>
+      <p class="subtitle">Account Identity Verification</p>
+    </header>
+
+    <main class="card" style="padding: 2.5rem 1.5rem;">
+      <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+      <h2>Server Access Verification</h2>
+      <p style="color: var(--text-secondary); line-height: 1.5; margin: 1.5rem 0;">
+        To protect the community against alt accounts and spam, please log in with your Discord account to verify your identity.
+      </p>
+
+      <!-- Replace href with your actual Discord OAuth2 authorization URL later -->
+      <a href="/auth/login" class="verify-btn">
+        Login with Discord
+      </a>
+    </main>
+
+    <footer class="footer">
+      <p>🔒 DoubleCheck only requests basic public profile data.</p>
+    </footer>
+  </div>
+</body>
+</html>
