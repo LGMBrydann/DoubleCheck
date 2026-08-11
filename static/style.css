@@ -107,4 +107,23 @@ body {
   margin-top: 2rem;
   color: var(--text-secondary);
   font-size: 0.85rem;
+
+.verify-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.85rem 0;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.verify-btn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
 }
