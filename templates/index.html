@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoubleCheck | Security Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="header">
+      <div class="brand">
+        <div class="status-indicator online" id="statusDot"></div>
+        <h1>DoubleCheck</h1>
+      </div>
+      <p class="subtitle">Alt Account Security & Moderation Bot</p>
+    </header>
+
+    <main class="grid-container">
+      <!-- Status Card -->
+      <section class="card">
+        <h3>Bot Status</h3>
+        <p class="stat-value" id="botStatus">Connecting...</p>
+        <span class="stat-label">System Operational</span>
+      </section>
+
+      <!-- Active Servers Card -->
+      <section class="card">
+        <h3>Monitored Servers</h3>
+        <p class="stat-value" id="serverCount">0</p>
+        <span class="stat-label">Guilds Protected</span>
+      </section>
+
+      <!-- Security Actions Card -->
+      <section class="card">
+        <h3>Latency</h3>
+        <p class="stat-value" id="botPing">0 ms</p>
+        <span class="stat-label">API Ping</span>
+      </section>
+    </main>
+
+    <section class="log-section">
+      <h3>Live Security Activity</h3>
+      <ul class="activity-log" id="activityLog">
+        <li>System initialized. Listening for new joins...</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>Powered by Render & UptimeRobot</p>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
