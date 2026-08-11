@@ -9,14 +9,15 @@ from discord.ext import commands
 # --- Flask Server Setup ---
 app = Flask(__name__)
 
+# Main Dashboard (index.html)
 @app.route('/')
 def home():
     return render_template('index.html')
 
+# Verification Page (verify.html)
 @app.route('/verify')
 def verify_page():
-    # Renders your verification HTML page
-    return render_template('index.html')
+    return render_template('verify.html')
 
 @app.route('/api/stats')
 def stats():
